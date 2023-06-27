@@ -18,8 +18,8 @@ p = u/500
 p
 q = 1 - p
 q
-ans2 = dbinom(x = 18 , size = 20 , prob = q)
-1 - ans2
+ans2 = pbinom(q = 18 , size = 20 , prob = q)
+ans2
 
 d = airline$Bag_Delivery_Time[0:75]
 u = mean(d)
